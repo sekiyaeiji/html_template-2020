@@ -1,0 +1,54 @@
+{
+  "site": {
+    "name": "サイト名",
+    "url": "https://sample/sample",
+    "title": "サイトタイトル",
+    "description": "ディスクリプションディスクリプションディスクリプション",
+    "keywords": "キーワード,キーワード,キーワード,キーワード,キーワード,キーワード",
+    "viewport": "width=device-width,initial-scale=1.0,maximum-scale=2.0",
+    "format_detection": "telephone=no,address=no,email=no",
+    "og_type": "website",
+    "og_img": "https://sample/sample.png",
+    "og_locale": "ja_JP",
+    "fb_app_id": "xxxxxxxxxxxxxxx",
+    "fb_admins": "xxxxxxxxxxxxxxx",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@xxxxxxxxxxxxxxx",
+    "canonical": "https://sample/sample",
+    "path": {
+      "css": {
+        "common": "css/common.css"
+      },
+      "js": {
+        "common": "js/common.js"
+      }
+    }
+  },
+  "list": [
+    {
+      "title": "title1",
+      "text": "text1",
+      "link": "#link1"
+    },
+    {
+      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル2",
+      "text": "テキストテキストテキスト文字文字文字2",
+      "link": "#link2"
+    },
+    {
+      "title": "表題表題表題表題表題表題3",
+      "text": "文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字3",
+      "link": "#link3"
+    },
+    {
+      "title": "title4",
+      "text": "text4",
+      "link": "#link4"
+    },
+    {
+      "title": "title5",
+      "text": "text5",
+      "link": "#link5"
+    }
+  ]
+}
