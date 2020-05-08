@@ -3,5 +3,43 @@
 // header
 .header {
   padding: 20px;
+  border-bottom: 1px solid #fff;
   text-align: center;
+  background-color: $CLR_BG_REVERSE;
+  color: $CLR_TXT_REVERSE;
+}
+
+// header-nav
+.header-nav {
+  margin-bottom: 30px;
+
+  > ul {
+    font-size: $FONT_SIZE_ZERO;
+  }
+
+  .header-nav__item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    border-left: 1px solid #fff;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  .header-nav__anchor {
+    display: block;
+    padding: 10px 0;
+    font-size: $FONT_SIZE_S;
+    text-align: center;
+    text-decoration: none;
+    background-color: $CLR_BG_NAV;
+    color: $CLR_TXT_REVERSE;
+
+    &:active,
+    &:hover {
+      background-color: $CLR_BG_NAV_HOVER;
+    }
+  }
 }

@@ -27,37 +27,61 @@
     <!-- css-->
     <link rel="stylesheet" media="all" href="css/common.css">
   </head>
-  <body><a class="skip_link" href="#link-main">メインコンテンツに移動</a>
+  <body>
+    <!-- skip link-->
+    <p class="skip_link"><a href="#link-main">メインコンテンツに移動</a></p>
+    <!-- header-->
     <header>
       <div class="header">header</div>
     </header>
-    <div class="wrapper" id="link-main">
-      <h1 class="h1">body h1 body h1</h1>
+    <!-- header navigation-->
+    <nav class="header-nav">
+      <ul>
+        <li class="header-nav__item"><a class="header-nav__anchor" href="#link1">nav1</a></li>
+        <li class="header-nav__item"><a class="header-nav__anchor" href="#link2">ナビ2</a></li>
+        <li class="header-nav__item"><a class="header-nav__anchor" href="#link3">navnav3</a></li>
+        <li class="header-nav__item"><a class="header-nav__anchor" href="#link4">ナビナビ4</a></li>
+      </ul>
+    </nav>
+    <!-- main-->
+    <main class="main" id="link-main">
+      <h1 class="h1">main h1 main h1 main h1 main h1</h1>
       <ul class="item">
         <li>
-          <h2 class="h2">title1</h2>
-          <p><a href="#link1">text1</a></p>
+          <h2 class="h2 h2-list">subtitle1</h2>
+          <p><a class="icon_link" href="#link1">text1</a></p>
         </li>
         <li>
-          <h2 class="h2">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル2</h2>
-          <p><a href="#link2">テキストテキストテキスト文字文字文字2</a></p>
+          <h2 class="h2 h2-list">サブタイトルサブタイトルサブタイトルサブタイトルサブタイトル2</h2>
+          <p><a class="icon_link" href="https://link2" target="_blank">テキストテキストテキストテキストテキストテキスト2</a></p>
         </li>
         <li>
-          <h2 class="h2">表題表題表題表題表題表題3</h2>
-          <p><a href="#link3">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字3</a></p>
+          <h2 class="h2 h2-list">副題副題副題副題副題副題副題3</h2>
+          <p><a class="icon_link" href="#link3">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字3</a></p>
         </li>
         <li>
-          <h2 class="h2">title4</h2>
-          <p><a href="#link4">text4</a></p>
+          <h2 class="h2 h2-list">subtitle4</h2>
+          <p><a class="icon_link" href="#link4">text4</a></p>
         </li>
         <li>
-          <h2 class="h2">title5</h2>
-          <p><a href="#link5">text5</a></p>
+          <h2 class="h2 h2-list">subtitlesubtitlesubtitle5</h2>
+          <p><a class="icon_link" href="https://link5" target="_blank">text5</a></p>
         </li>
       </ul>
+      <h2 class="h2">サブタイトルサブタイトル</h2>
       <div class="img"><a href="#DUMMY" aria-label="サンプル"><img src="img/sample.jpg" alt=""></a></div>
-      <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<a href="#DUMMY">テキストテキストテキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト<br>テキスト</p>
-    </div>
+      <h2 class="h2">サブタイトルサブタイトル</h2>
+      <p class="text">テキストテキストテキストテキストテキスト</p>
+      <h3 class="h3">小タイトル小タイトル小タイトル</h3>
+      <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <h3 class="h3">小タイトル小タイトル小タイトル</h3>
+      <p class="text">テキストテキストテキストテキストテキストテキスト<a class="icon_link" href="#DUMMY">テキストテキストテキストテキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<a class="icon_link" href="https://DUMMY" target="_blank">テキストテキストテキストテキストテキストテキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキスト<br><a class="icon_link" href="https://DUMMY" target="_blank">テキスト</a><br>テキスト<br>テキスト<br><a class="icon_link" href="#DUMMY">テキスト</a><br>テキスト<br>テキスト</p>
+      <h2 class="h2">サブタイトルサブタイトル</h2>
+      <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <h3 class="h3">小タイトル小タイトル小タイトル</h3>
+      <p class="text">テキストテキストテキスト<a class="icon_link" href="#DUMMY">テキストテキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </main>
+    <!-- footer-->
     <footer>
       <div class="footer">footer</div>
     </footer>

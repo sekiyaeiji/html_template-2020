@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo "\n\n\n*** build:css ***"
 stylelint --config conf/stylelintrc.js src/css/**/*.scss &&
   node-sass --output-style compressed src/css/common/common.scss -o dist/css/
 

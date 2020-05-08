@@ -1,52 +1,51 @@
 extend ../layout/default
 
 block body
-  .wrapper#link-main
-    h1.h1 body h1 body h1
+  main.main#link-main
+    h1.h1 main h1 main h1 main h1 main h1
     ul.item
       for data in list
         li
-          h2.h2= data.title
-          p
-            a(href=data.link)= data.text
+          h2.h2.h2-list= data.title
+          if data.target!=''
+            p
+              a.icon_link(href=data.link, target=data.target)= data.text
+          else
+            p
+              a.icon_link(href=data.link)= data.text
+    h2.h2 サブタイトルサブタイトル
     .img
       a(href="#DUMMY", aria-label="サンプル")
         img(src="img/sample.jpg", alt="")
+    h2.h2 サブタイトルサブタイトル
+    p.text テキストテキストテキストテキストテキスト
+    h3.h3 小タイトル小タイトル小タイトル
+    p.text テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    h3.h3 小タイトル小タイトル小タイトル
     p.text
-      |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-      a(href="#DUMMY") テキストテキストテキスト
-      |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      |テキストテキストテキストテキストテキストテキスト
+      a.icon_link(href="#DUMMY") テキストテキストテキストテキスト
+      |テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      a.icon_link(href="https://DUMMY", target="_blank") テキストテキストテキストテキストテキストテキスト
+      |テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      br
+      |テキスト
+      br
+      a.icon_link(href="https://DUMMY", target="_blank") テキスト
       br
       |テキスト
       br
       |テキスト
       br
-      |テキスト
+      a.icon_link(href="#DUMMY") テキスト
       br
       |テキスト
       br
       |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
-      br
-      |テキスト
+    h2.h2 サブタイトルサブタイトル
+    p.text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    h3.h3 小タイトル小タイトル小タイトル
+    p.text
+      |テキストテキストテキスト
+      a.icon_link(href="#DUMMY") テキストテキスト
+      |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト

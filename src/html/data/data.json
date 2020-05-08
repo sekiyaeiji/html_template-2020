@@ -26,29 +26,52 @@
   },
   "list": [
     {
-      "title": "title1",
+      "title": "subtitle1",
       "text": "text1",
+      "link": "#link1",
+      "target": ""
+    },
+    {
+      "title": "サブタイトルサブタイトルサブタイトルサブタイトルサブタイトル2",
+      "text": "テキストテキストテキストテキストテキストテキスト2",
+      "link": "https://link2",
+      "target": "_blank"
+    },
+    {
+      "title": "副題副題副題副題副題副題副題3",
+      "text": "文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字3",
+      "link": "#link3",
+      "target": ""
+    },
+    {
+      "title": "subtitle4",
+      "text": "text4",
+      "link": "#link4",
+      "target": ""
+    },
+    {
+      "title": "subtitlesubtitlesubtitle5",
+      "text": "text5",
+      "link": "https://link5",
+      "target": "_blank"
+    }
+  ],
+  "nav_header": [
+    {
+      "title": "nav1",
       "link": "#link1"
     },
     {
-      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル2",
-      "text": "テキストテキストテキスト文字文字文字2",
+      "title": "ナビ2",
       "link": "#link2"
     },
     {
-      "title": "表題表題表題表題表題表題3",
-      "text": "文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字3",
+      "title": "navnav3",
       "link": "#link3"
     },
     {
-      "title": "title4",
-      "text": "text4",
+      "title": "ナビナビ4",
       "link": "#link4"
-    },
-    {
-      "title": "title5",
-      "text": "text5",
-      "link": "#link5"
     }
   ]
 }

@@ -3,7 +3,7 @@
 //------ 変数を設定するファイル ------
 
 // font-family
-$FONT_FAMILY: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, Arial, Sans-serif;
+$FONT_FAMILY: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, Arial, sans-serif;
 
 // font-size
 $FONT_SIZE_4L: 34px;
@@ -42,7 +42,11 @@ $INNER_BORDER_RADIUS: 3px;
 $CLR_BG: #f5f5f5;
 
 // 背景色：反転
-$CLR_BG_REVERSE: #362020;
+$CLR_BG_REVERSE: #333;
+
+// 背景色：ナビ
+$CLR_BG_NAV: #555;
+$CLR_BG_NAV_HOVER: #888;
 
 // 背景色：強調
 $CLR_BG_EM: #e2c147;
@@ -53,7 +57,7 @@ $CLR_TXT: #332525;
 
 // 文字色：リンク
 $CLR_TXT_LINK: #9e00b3;
-$CLR_TXT_HOVER: #ee70ff;
+$CLR_TXT_HOVER: #fe80ff;
 
 // 文字色：強調
 $CLR_EMPH: #736565;
@@ -64,8 +68,13 @@ $CLR_TXT_REVERSE: #fff;
 // 文字色：注記
 $CLR_TXT_NOTE: #707070;
 
+// 文字色：アイコン
+$CLR_TXT_ICON: $CLR_TXT_LINK;
+$CLR_TXT_ICON_HOVER: $CLR_TXT_HOVER;
+
 // outline
-$OUTLINE_CLR: $CLR_TXT_HOVER;
+$OUTLINE_CLR: #ffcc60;
 $OUTLINE_STYLE: auto;
-$OUTLINE_WIDTH: 5px;
-$OUTLINE_OFFSET: 2px;
+$OUTLINE_WIDTH: 7px;
+$OUTLINE_OFFSET: 0;
+$OUTLINE_BG_CLR: #ffecd0;

@@ -1,0 +1,5 @@
+nav.header-nav
+  ul
+    for data in nav_header
+      li.header-nav__item
+        a.header-nav__anchor(href=data.link)= data.title

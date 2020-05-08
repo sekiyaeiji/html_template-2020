@@ -16,6 +16,7 @@ a {
     outline-style: $OUTLINE_STYLE;
     outline-width: $OUTLINE_WIDTH;
     outline-offset: $OUTLINE_OFFSET;
+    background-color: $OUTLINE_BG_CLR;
   }
 
   &:link,
@@ -27,23 +28,10 @@ a {
   &:hover {
     color: $CLR_TXT_HOVER;
   }
-
-  &.skip_link {
-    left: 0;
-    position: absolute;
-    transform: translateY(-100%);
-    font-size: $FONT_SIZE_5S;
-    color: $CLR_TXT_REVERSE;
-
-    &:focus {
-      transform: translateY(0%);
-      color: $CLR_TXT_LINK;
-    }
-  }
 }
 
 // class
-.wrapper {
+.main {
   padding: 0 20px 30px;
 }
 
@@ -54,11 +42,22 @@ a {
 }
 
 .h2 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: $FONT_SIZE_L;
   font-weight: bold;
   line-height: $LINE_HEIGHT_S;
   color: $CLR_EMPH;
+
+  &.h2-list {
+    margin-bottom: 5px;
+  }
+}
+
+.h3 {
+  margin-bottom: 10px;
+  font-size: $FONT_SIZE_M;
+  font-weight: bold;
+  line-height: $LINE_HEIGHT_S;
 }
 
 .item {
@@ -72,9 +71,10 @@ a {
 .img {
   margin-bottom: 30px;
   text-align: center;
+
   > a {
     display: inline-block;
-    > img {
+    img {
       width: 200px;
     }
   }
@@ -82,8 +82,20 @@ a {
 
 .text {
   margin-bottom: 30px;
+}
+
+.skip_link {
+  left: 0;
+  position: absolute;
 
   a {
-    text-decoration: underline;
+    transform: translateY(-100%);
+    font-size: $FONT_SIZE_5S;
+    color: transparent;
+
+    &:focus {
+      transform: translateY(0%);
+      color: $CLR_TXT_LINK;
+    }
   }
 }
