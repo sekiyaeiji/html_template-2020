@@ -2,6 +2,21 @@
 
 // footer
 .footer {
-  padding: 0 20px 50px;
+  padding: 20px 20px 10px;
   text-align: center;
+  background-color: $CLR_BG_REVERSE;
+  color: $CLR_TXT_REVERSE;
+
+  .footer-content {
+    margin-bottom: 10px;
+    font-size: $FONT_SIZE_S;
+  }
+
+  .footer-copyright {
+    font-size: $FONT_SIZE_4S;
+
+    .copyright-symbol {
+      font-family: $FONT_FAMILY_ENG;
+    }
+  }
 }

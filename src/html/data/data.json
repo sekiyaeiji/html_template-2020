@@ -15,6 +15,7 @@
     "twitter_card": "summary_large_image",
     "twitter_site": "@xxxxxxxxxxxxxxx",
     "canonical": "https://sample/sample",
+    "copyright": "sample, Inc.",
     "path": {
       "css": {
         "common": "css/common.css"

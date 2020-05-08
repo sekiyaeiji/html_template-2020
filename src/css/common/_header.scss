@@ -2,11 +2,14 @@
 
 // header
 .header {
-  padding: 20px;
-  border-bottom: 1px solid #fff;
+  padding: 10px 0;
   text-align: center;
   background-color: $CLR_BG_REVERSE;
   color: $CLR_TXT_REVERSE;
+
+  .header-content {
+    font-size: $FONT_SIZE_S;
+  }
 }
 
 // header-nav
@@ -30,8 +33,8 @@
 
   .header-nav__anchor {
     display: block;
-    padding: 10px 0;
-    font-size: $FONT_SIZE_S;
+    padding: 6px 0;
+    font-size: $FONT_SIZE_3S;
     text-align: center;
     text-decoration: none;
     background-color: $CLR_BG_NAV;
