@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- skip link-->
-    <p class="skip_link"><a href="#link-main">メインコンテンツに移動</a></p>
+    <p class="skip-link"><a href="#link-main">メインコンテンツに移動</a></p>
     <!-- header-->
     <header class="header">
       <p class="header-content">header</p>
@@ -42,6 +42,15 @@
         <li class="header-nav__item"><a class="header-nav__anchor" href="#link3">navnav3</a></li>
         <li class="header-nav__item"><a class="header-nav__anchor" href="#link4">ナビナビ4</a></li>
       </ul>
+    </nav>
+    <!-- header breadcrumb-->
+    <nav class="header-breadcrumb">
+      <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link1" itemprop="item">breadcrumb1</a></li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link2" itemprop="item">bread2</a></li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link3" itemprop="item">breadcrumbbreadcrumb3</a></li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link4" itemprop="item">breadcrumb4</a></li>
+      </ol>
     </nav>
     <!-- main-->
     <main class="main" id="link-main">

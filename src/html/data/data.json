@@ -74,5 +74,23 @@
       "title": "ナビナビ4",
       "link": "#link4"
     }
+  ],
+  "nav_breadcrumb": [
+    {
+      "title": "breadcrumb1",
+      "link": "#link1"
+    },
+    {
+      "title": "bread2",
+      "link": "#link2"
+    },
+    {
+      "title": "breadcrumbbreadcrumb3",
+      "link": "#link3"
+    },
+    {
+      "title": "breadcrumb4",
+      "link": "#link4"
+    }
   ]
 }

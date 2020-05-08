@@ -1,0 +1,5 @@
+nav.header-breadcrumb
+  ol(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+    for data in nav_breadcrumb
+      li.header-breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+        a.header-breadcrumb__anchor(href=data.link, itemprop='item')= data.title
