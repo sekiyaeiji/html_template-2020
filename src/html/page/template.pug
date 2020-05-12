@@ -2,7 +2,7 @@ extend ../layout/default
 
 block body
   main.main#link-main
-    h1.h1 main h1 main h1 main h1 main h1
+    h1.h1 main h1 メインメイン h1 メインメイン h1
     ul.item
       for data in list
         li
@@ -15,10 +15,11 @@ block body
               a.icon_link(href=data.link)= data.text
     h2.h2 サブタイトルサブタイトル
     .img
-      a(href="#DUMMY", aria-label="写真画像")
-        img(src="img/sample01.jpg", alt="")
-    .img(aria-label="写真画像")
-      img(src="img/sample02.jpg", alt="テキストが含まれる画像")
+      a(href="#DUMMY")
+        img(src="img/sample01.jpg", alt="バーの内装の写真")
+    h2.h2 テキストが含まれる画像 （画像化されたテキスト）
+    .img
+      img(src="img/sample02.png", alt="テキストが含まれる画像")
     h2.h2 サブタイトルサブタイトル
     p.text テキストテキストテキストテキストテキスト
     h3.h3 小タイトル小タイトル小タイトル

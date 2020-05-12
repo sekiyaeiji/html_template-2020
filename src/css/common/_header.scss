@@ -2,25 +2,74 @@
 
 // header
 .header {
+  position: relative;
   padding: 10px 0;
   text-align: center;
   background-color: $CLR_BG_REVERSE;
   color: $CLR_TXT_REVERSE;
 
   .header-content {
+    padding: 0 30px;
     font-size: $FONT_SIZE_S;
   }
 }
 
-// header-nav
-.header-nav {
+// header-side-nav
+.header-side-nav {
+  position: absolute;
+  left: 8px;
+  top: 30%;
+
+  #{&}__icon {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 18px;
+    height: 15px;
+    border-width: 1px 0 1px;
+    border-style: solid;
+    border-color: #fff;
+
+    &::before {
+      content: "(サイドメニュー)";
+      position: absolute;
+      display: block;
+      top: 7px;
+      width: 18px;
+      height: 0;
+      border-top: 1px solid #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 1em;
+    }
+  }
+
+  #{&}__nav {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    text-align: left;
+
+    > ul {
+      padding: 20px;
+    }
+  }
+}
+
+// header-global-nav
+.header-global-nav {
   margin-bottom: 10px;
 
   > ul {
     font-size: $FONT_SIZE_ZERO;
   }
 
-  .header-nav__item {
+  #{&}__item {
     display: inline-block;
     box-sizing: border-box;
     width: 25%;
@@ -31,7 +80,7 @@
     }
   }
 
-  .header-nav__anchor {
+  #{&}__anchor {
     display: block;
     padding: 6px 0;
     font-size: $FONT_SIZE_3S;

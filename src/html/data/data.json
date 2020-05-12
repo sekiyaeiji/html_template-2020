@@ -57,7 +57,7 @@
       "target": "_blank"
     }
   ],
-  "nav_header": [
+  "global_nav_header": [
     {
       "title": "nav1",
       "link": "#link1",
@@ -72,6 +72,28 @@
       "title": "navnav3",
       "link": "#link3",
       "current": ""
+    },
+    {
+      "title": "ナビナビ4",
+      "link": "#link4",
+      "current": ""
+    }
+  ],
+  "global_nav_side": [
+    {
+      "title": "nav1",
+      "link": "#link1",
+      "current": ""
+    },
+    {
+      "title": "ナビ2",
+      "link": "#link2",
+      "current": ""
+    },
+    {
+      "title": "navnav3",
+      "link": "#link3",
+      "current": "true"
     },
     {
       "title": "ナビナビ4",

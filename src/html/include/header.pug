@@ -1,2 +1,13 @@
-header.header
-  p.header-content header
+.header
+  header.header-content header logo
+  .header-side-nav
+    span.header-side-nav__icon
+    nav.header-side-nav__nav
+      ul
+        for data in global_nav_side
+          if data.current=='true'
+            li.header-side-nav__item
+              a.header-side-nav__anchor.is-current(href=data.link, aria-current='page')= data.title
+          else
+            li.header-side-nav__item
+              a.header-side-nav__anchor(href=data.link)= data.title

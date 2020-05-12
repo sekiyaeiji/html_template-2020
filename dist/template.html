@@ -31,16 +31,26 @@
     <!-- skip link-->
     <p class="skip-link"><a href="#link-main">メインコンテンツに移動</a></p>
     <!-- header-->
-    <header class="header">
-      <p class="header-content">header</p>
-    </header>
-    <!-- header navigation-->
-    <nav class="header-nav">
+    <div class="header">
+      <header class="header-content">header logo</header>
+      <div class="header-side-nav"><span class="header-side-nav__icon"></span>
+        <nav class="header-side-nav__nav">
+          <ul>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link1">nav1</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link2">ナビ2</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor is-current" href="#link3" aria-current="page">navnav3</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link4">ナビナビ4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- header global navigation-->
+    <nav class="header-global-nav">
       <ul>
-        <li class="header-nav__item"><a class="header-nav__anchor" href="#link1">nav1</a></li>
-        <li class="header-nav__item"><a class="header-nav__anchor is-current" href="#link2" aria-current="page">ナビ2</a></li>
-        <li class="header-nav__item"><a class="header-nav__anchor" href="#link3">navnav3</a></li>
-        <li class="header-nav__item"><a class="header-nav__anchor" href="#link4">ナビナビ4</a></li>
+        <li class="header-global-nav__item"><a class="header-global-nav__anchor" href="#link1">nav1</a></li>
+        <li class="header-global-nav__item"><a class="header-global-nav__anchor is-current" href="#link2" aria-current="page">ナビ2</a></li>
+        <li class="header-global-nav__item"><a class="header-global-nav__anchor" href="#link3">navnav3</a></li>
+        <li class="header-global-nav__item"><a class="header-global-nav__anchor" href="#link4">ナビナビ4</a></li>
       </ul>
     </nav>
     <!-- header breadcrumb-->
@@ -54,7 +64,7 @@
     </nav>
     <!-- main-->
     <main class="main" id="link-main">
-      <h1 class="h1">main h1 main h1 main h1 main h1</h1>
+      <h1 class="h1">main h1 メインメイン h1 メインメイン h1</h1>
       <ul class="item">
         <li>
           <h2 class="h2 h2-list">subtitle1</h2>
@@ -78,8 +88,9 @@
         </li>
       </ul>
       <h2 class="h2">サブタイトルサブタイトル</h2>
-      <div class="img"><a href="#DUMMY" aria-label="写真画像"><img src="img/sample01.jpg" alt=""></a></div>
-      <div class="img" aria-label="写真画像"><img src="img/sample02.jpg" alt="テキストが含まれる画像"></div>
+      <div class="img"><a href="#DUMMY"><img src="img/sample01.jpg" alt="バーの内装の写真"></a></div>
+      <h2 class="h2">テキストが含まれる画像 （画像化されたテキスト）</h2>
+      <div class="img"><img src="img/sample02.png" alt="テキストが含まれる画像"></div>
       <h2 class="h2">サブタイトルサブタイトル</h2>
       <p class="text">テキストテキストテキストテキストテキスト</p>
       <h3 class="h3">小タイトル小タイトル小タイトル</h3>

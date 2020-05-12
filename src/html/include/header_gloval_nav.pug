@@ -1,0 +1,9 @@
+nav.header-global-nav
+  ul
+    for data in global_nav_header
+      if data.current=='true'
+        li.header-global-nav__item
+          a.header-global-nav__anchor.is-current(href=data.link, aria-current='page')= data.title
+      else
+        li.header-global-nav__item
+          a.header-global-nav__anchor(href=data.link)= data.title

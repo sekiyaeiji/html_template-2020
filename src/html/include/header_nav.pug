@@ -1,9 +1,0 @@
-nav.header-nav
-  ul
-    for data in nav_header
-      if data.current=='true'
-        li.header-nav__item
-          a.header-nav__anchor.is-current(href=data.link, aria-current='page')= data.title
-      else
-        li.header-nav__item
-          a.header-nav__anchor(href=data.link)= data.title
