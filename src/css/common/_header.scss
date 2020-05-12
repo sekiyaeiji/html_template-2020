@@ -44,6 +44,12 @@
     &:hover {
       background-color: $CLR_BG_NAV_HOVER;
     }
+
+    &.is-current {
+      background-color: $CLR_BG_NAV_CURRENT;
+      color: $CLR_TXT;
+      font-weight: bold;
+    }
   }
 }
 

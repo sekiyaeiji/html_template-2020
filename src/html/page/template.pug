@@ -7,7 +7,7 @@ block body
       for data in list
         li
           h2.h2.h2-list= data.title
-          if data.target!=''
+          if data.current!=''
             p
               a.icon_link(href=data.link, target=data.target)= data.text
           else
@@ -15,8 +15,10 @@ block body
               a.icon_link(href=data.link)= data.text
     h2.h2 サブタイトルサブタイトル
     .img
-      a(href="#DUMMY", aria-label="サンプル")
-        img(src="img/sample.jpg", alt="")
+      a(href="#DUMMY", aria-label="写真画像")
+        img(src="img/sample01.jpg", alt="")
+    .img(aria-label="写真画像")
+      img(src="img/sample02.jpg", alt="テキストが含まれる画像")
     h2.h2 サブタイトルサブタイトル
     p.text テキストテキストテキストテキストテキスト
     h3.h3 小タイトル小タイトル小タイトル

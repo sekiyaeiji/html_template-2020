@@ -60,19 +60,23 @@
   "nav_header": [
     {
       "title": "nav1",
-      "link": "#link1"
+      "link": "#link1",
+      "current": ""
     },
     {
       "title": "ナビ2",
-      "link": "#link2"
+      "link": "#link2",
+      "current": "true"
     },
     {
       "title": "navnav3",
-      "link": "#link3"
+      "link": "#link3",
+      "current": ""
     },
     {
       "title": "ナビナビ4",
-      "link": "#link4"
+      "link": "#link4",
+      "current": ""
     }
   ],
   "nav_breadcrumb": [
