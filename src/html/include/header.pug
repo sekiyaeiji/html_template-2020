@@ -1,7 +1,9 @@
 .header
   header.header-content header logo
   .header-side-nav
-    span.header-side-nav__icon
+    input#navi-toggle.header-side-nav__toggle(type='checkbox')
+    label.header-side-nav__icon(for='navi-toggle')
+    label.header-side-nav__close(for='navi-toggle')
     nav.header-side-nav__nav
       ul
         for data in global_nav_side
