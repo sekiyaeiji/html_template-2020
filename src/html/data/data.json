@@ -81,23 +81,33 @@
   ],
   "global_nav_side": [
     {
-      "title": "nav1",
-      "link": "#link1",
+      "title": "side nav1",
+      "link": "#side-link1",
       "current": ""
     },
     {
-      "title": "ナビ2",
-      "link": "#link2",
+      "title": "サイトナビ2",
+      "link": "#side-link2",
       "current": ""
     },
     {
-      "title": "navnav3",
-      "link": "#link3",
+      "title": "side nav side nav3",
+      "link": "#side-link3",
       "current": "true"
     },
     {
-      "title": "ナビナビ4",
-      "link": "#link4",
+      "title": "サイドナビ4サイドナビ4サイドナビ4サイドナビ4サイドナビ4",
+      "link": "#side-link4",
+      "current": ""
+    },
+    {
+      "title": "side nav side nav5",
+      "link": "#side-link5",
+      "current": ""
+    },
+    {
+      "title": "サイドナビ4サイドナビ4サイドナビ4サイドナビ6",
+      "link": "#side-link6",
       "current": ""
     }
   ],
@@ -116,7 +126,7 @@
     },
     {
       "title": "breadcrumb4",
-      "link": "#link4"
+      "link": ""
     }
   ]
 }

@@ -1,0 +1,15 @@
+.header-side-nav
+  input#navi-toggle.header-side-nav__toggle(type='checkbox')
+  label.header-side-nav__icon(for='navi-toggle')
+    span
+  label.header-side-nav__close(for='navi-toggle')
+  nav.header-side-nav__nav
+    h2.h2-navigation サイドナビゲーション
+    ul
+      for data in global_nav_side
+        if data.current=='true'
+          li.header-side-nav__item
+            a.header-side-nav__anchor.is-current(href=data.link, aria-current='page')= data.title
+        else
+          li.header-side-nav__item
+            a.header-side-nav__anchor(href=data.link)= data.title

@@ -1,5 +1,15 @@
 nav.header-breadcrumb
+  h2.h2-navigation パンくずナビゲーション
   ol(itemscope='', itemtype='http://schema.org/BreadcrumbList')
-    for data in nav_breadcrumb
-      li.header-breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
-        a.header-breadcrumb__anchor(href=data.link, itemprop='item')= data.title
+    for data, index in nav_breadcrumb
+
+      if data.link==''
+        li.header-breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+          strong.header-breadcrumb__anchor(itemprop='item')
+            span(itemprop='name')= data.title
+          meta(itemprop='position', content=index + 1)
+      else
+        li.header-breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+          a.header-breadcrumb__anchor(href=data.link, itemprop='item')
+            span(itemprop='name')= data.title
+          meta(itemprop='position', content=index + 1)

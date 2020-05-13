@@ -3,13 +3,13 @@
 // header
 .header {
   position: relative;
-  padding: 10px 0;
+  padding: 11px 0;
   text-align: center;
   background-color: $CLR_BG_REVERSE;
   color: $CLR_TXT_REVERSE;
 
   .header-content {
-    padding: 0 30px;
+    padding: 0 50px;
     font-size: $FONT_SIZE_S;
   }
 }
@@ -17,35 +17,44 @@
 // header-side-nav
 .header-side-nav {
   position: absolute;
-  left: 10px;
-  top: 29%;
-  width: 18px;
-  height: 17px;
+  left: 0;
+  top: 0;
 
   #{&}__icon {
-    position: relative;
     display: block;
-    box-sizing: content-box;
-    width: 18px;
-    height: 15px;
-    border-width: 1px 0 1px;
-    border-style: solid;
-    border-color: #fff;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
 
-    &::before {
-      content: "(サイドメニュー)";
+    > span {
       position: absolute;
       display: block;
-      margin: auto 0;
+      margin: auto;
       top: 0;
       bottom: 0;
-      width: 100%;
-      height: 0;
-      border-top: 1px solid #fff;
-      overflow: hidden;
-      white-space: nowrap;
-      text-indent: 1em;
+      left: 0;
+      right: 0;
+      width: 20px;
+      height: 16px;
+      box-sizing: content-box;
+      border-width: 1px 0 1px;
+      border-style: solid;
+      border-color: #fff;
+
+      &::before {
+        content: "(サイドメニュー)";
+        position: absolute;
+        display: block;
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 1em;
+      }
     }
   }
 
@@ -57,7 +66,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 90%;
+    width: 85%;
     max-width: 380px;
     height: 100%;
     z-index: 2;
@@ -67,7 +76,37 @@
     transform: translateX(-105%);
 
     > ul {
-      padding: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #{&}__item {
+    border-top: 1px solid #fff;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  #{&}__anchor {
+    display: block;
+    padding: 10px 20px;
+    font-size: $FONT_SIZE_2S;
+    font-weight: bold;
+    text-decoration: none;
+    color: $CLR_TXT;
+    background-color: #eee;
+
+    &:active,
+    &:hover {
+      background-color: $CLR_BG_NAV_HOVER;
+      color: $CLR_TXT_REVERSE;
+    }
+
+    &.is-current {
+      background-color: $CLR_BG_NAV_HOVER;
+      color: $CLR_TXT_REVERSE;
+      font-weight: bold;
     }
   }
 

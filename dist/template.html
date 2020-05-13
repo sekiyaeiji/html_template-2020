@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!-- ga-->
+    <!-- google analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxx-x"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-xxxxxxxxx-x');</script>
     <!-- meta, title-->
@@ -33,22 +33,27 @@
     <!-- header-->
     <div class="header">
       <header class="header-content">header logo</header>
+      <!-- header side navigation-->
       <div class="header-side-nav">
         <input class="header-side-nav__toggle" id="navi-toggle" type="checkbox">
-        <label class="header-side-nav__icon" for="navi-toggle"></label>
+        <label class="header-side-nav__icon" for="navi-toggle"><span></span></label>
         <label class="header-side-nav__close" for="navi-toggle"></label>
         <nav class="header-side-nav__nav">
+          <h2 class="h2-navigation">サイドナビゲーション</h2>
           <ul>
-            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link1">nav1</a></li>
-            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link2">ナビ2</a></li>
-            <li class="header-side-nav__item"><a class="header-side-nav__anchor is-current" href="#link3" aria-current="page">navnav3</a></li>
-            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#link4">ナビナビ4</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#side-link1">side nav1</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#side-link2">サイトナビ2</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor is-current" href="#side-link3" aria-current="page">side nav side nav3</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#side-link4">サイドナビ4サイドナビ4サイドナビ4サイドナビ4サイドナビ4</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#side-link5">side nav side nav5</a></li>
+            <li class="header-side-nav__item"><a class="header-side-nav__anchor" href="#side-link6">サイドナビ4サイドナビ4サイドナビ4サイドナビ6</a></li>
           </ul>
         </nav>
       </div>
     </div>
     <!-- header global navigation-->
     <nav class="header-global-nav">
+      <h2 class="h2-navigation">グローバルナビゲーション</h2>
       <ul>
         <li class="header-global-nav__item"><a class="header-global-nav__anchor" href="#link1">nav1</a></li>
         <li class="header-global-nav__item"><a class="header-global-nav__anchor is-current" href="#link2" aria-current="page">ナビ2</a></li>
@@ -58,11 +63,20 @@
     </nav>
     <!-- header breadcrumb-->
     <nav class="header-breadcrumb">
+      <h2 class="h2-navigation">パンくずナビゲーション</h2>
       <ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
-        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link1" itemprop="item">breadcrumb1</a></li>
-        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link2" itemprop="item">bread2</a></li>
-        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link3" itemprop="item">breadcrumbbreadcrumb3</a></li>
-        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link4" itemprop="item">breadcrumb4</a></li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link1" itemprop="item"><span itemprop="name">breadcrumb1</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link2" itemprop="item"><span itemprop="name">bread2</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="header-breadcrumb__anchor" href="#link3" itemprop="item"><span itemprop="name">breadcrumbbreadcrumb3</span></a>
+          <meta itemprop="position" content="3">
+        </li>
+        <li class="header-breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><strong class="header-breadcrumb__anchor" itemprop="item"><span itemprop="name">breadcrumb4</span></strong>
+          <meta itemprop="position" content="4">
+        </li>
       </ol>
     </nav>
     <!-- main-->
