@@ -60,22 +60,22 @@
   "global_nav_header": [
     {
       "title": "nav1",
-      "link": "#link1",
+      "link": "#global-link1",
       "current": ""
     },
     {
       "title": "ナビ2",
-      "link": "#link2",
+      "link": "#global-link2",
       "current": "true"
     },
     {
       "title": "navnav3",
-      "link": "#link3",
+      "link": "#global-link3",
       "current": ""
     },
     {
-      "title": "ナビナビ4",
-      "link": "#link4",
+      "title": "ナビナビナビナビナビ4",
+      "link": "#global-link4",
       "current": ""
     }
   ],
@@ -96,7 +96,7 @@
       "current": "true"
     },
     {
-      "title": "サイドナビ4サイドナビ4サイドナビ4サイドナビ4サイドナビ4",
+      "title": "サイドナビ4 サイドナビ4 サイドナビ4 サイドナビ4 サイドナビ4",
       "link": "#side-link4",
       "current": ""
     },
@@ -106,7 +106,7 @@
       "current": ""
     },
     {
-      "title": "サイドナビ4サイドナビ4サイドナビ4サイドナビ6",
+      "title": "サイドナビ6サイドナビ6サイドナビ6サイドナビ6",
       "link": "#side-link6",
       "current": ""
     }
@@ -114,18 +114,18 @@
   "nav_breadcrumb": [
     {
       "title": "breadcrumb1",
-      "link": "#link1"
+      "link": "#breadcrumb-link1"
     },
     {
-      "title": "bread2",
-      "link": "#link2"
+      "title": "bread2 bread2",
+      "link": "#breadcrumb-link2"
     },
     {
-      "title": "breadcrumbbreadcrumb3",
-      "link": "#link3"
+      "title": "breadcrumb breadcrumb3",
+      "link": "#breadcrumb-link3"
     },
     {
-      "title": "breadcrumb4",
+      "title": "breadcrumb4 breadcrumb4",
       "link": ""
     }
   ]

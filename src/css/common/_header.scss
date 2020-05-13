@@ -3,13 +3,17 @@
 // header
 .header {
   position: relative;
-  padding: 11px 0;
   text-align: center;
   background-color: $CLR_BG_REVERSE;
   color: $CLR_TXT_REVERSE;
 
   .header-content {
+    display: flex;
     padding: 0 50px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    font-size: $FONT_SIZE_3S;
     font-size: $FONT_SIZE_S;
   }
 }
@@ -67,6 +71,7 @@
     left: 0;
     top: 0;
     width: 85%;
+    min-width: 240px;
     max-width: 380px;
     height: 100%;
     z-index: 2;
@@ -134,7 +139,7 @@
 
 // header-global-nav
 .header-global-nav {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   > ul {
     font-size: $FONT_SIZE_ZERO;
@@ -145,6 +150,7 @@
     box-sizing: border-box;
     width: 25%;
     border-left: 1px solid #fff;
+    vertical-align: top;
 
     &:first-child {
       border-left: none;
@@ -152,10 +158,14 @@
   }
 
   #{&}__anchor {
-    display: block;
-    padding: 6px 0;
+    display: flex;
+    box-sizing: content-box;
+    padding: 0 4px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
     font-size: $FONT_SIZE_3S;
-    text-align: center;
+    line-height: $LINE_HEIGHT_2S;
     text-decoration: none;
     background-color: $CLR_BG_NAV;
     color: $CLR_TXT_REVERSE;
@@ -175,7 +185,7 @@
 
 // header-breadcrumb
 .header-breadcrumb {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0 10px;
 
   > ol {
@@ -217,7 +227,7 @@
   .header-breadcrumb__anchor {
     display: inline-block;
     font-size: $FONT_SIZE_4S;
-    min-height: 30px;
-    line-height: 30px;
+    min-height: 34px;
+    line-height: 34px;
   }
 }

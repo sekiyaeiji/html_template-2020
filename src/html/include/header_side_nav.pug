@@ -1,10 +1,10 @@
 .header-side-nav
   input#navi-toggle.header-side-nav__toggle(type='checkbox')
-  label.header-side-nav__icon(for='navi-toggle')
+  label.header-side-nav__icon(for='navi-toggle', aria-label='開く')
     span
-  label.header-side-nav__close(for='navi-toggle')
-  nav.header-side-nav__nav
-    h2.h2-navigation サイドナビゲーション
+  label.header-side-nav__close(for='navi-toggle', aria-label='閉じる')
+  nav.header-side-nav__nav(aria-label='メイン')
+    h2.h2-navigation メインナビゲーション
     ul
       for data in global_nav_side
         if data.current=='true'

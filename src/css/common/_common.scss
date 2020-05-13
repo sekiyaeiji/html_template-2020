@@ -102,8 +102,10 @@ a {
     color: transparent;
 
     &:focus {
+      position: relative;
       transform: translateY(0%);
       color: $CLR_TXT_LINK;
+      z-index: 10;
     }
   }
 }
